@@ -1,0 +1,138 @@
+.page {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.decor--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page--title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.container__room-card {
+    margin-bottom: 32px;
+    border-radius: 13px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container__room-card--img {
+    object-fit: cover;
+    display: block;
+    /*width: 100%;*/
+}
+
+.container__room-card--content {
+    position: absolute;
+    bottom: 0;
+    padding: 77px 21px 21px 21px;
+    background: linear-gradient(
+        to top,
+        rgba(10, 34, 64, 1) 10%,
+        rgba(10, 34, 64, 0.1) 100%);
+    color: white;
+}
+
+.container__room-card--title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    
+}
+
+.container__room-card--description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
+
+/*.container__room-card--price {
+    margin: 21px 0 21px 0;
+}*/
+
+
+.container__room-card--price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin-top: 21px;
+}
+
+.container__room-card--price--value {
+    display: flex;
+}
+
+.container__room-card--price--from {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.container__room-card--price--num{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #FF4B77;
+    margin-right: 5px;
+}
+
+.container__room-card--price--currency {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    /*vertical-align: middle;*/
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+.container__room-card--btn {
+    width: 100%;
+    background-color: #F91155;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    height: 42px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
