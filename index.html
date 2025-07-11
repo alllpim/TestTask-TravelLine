@@ -5,45 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestTask TravelLine</title>
     <link rel="stylesheet" href="styles/style.css">
-   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="scripts/room_card.js"></script>
 </head>
 <body class="page">
-    <h1 class="page--title">НОМЕРА И ЦЕНЫ</h1> <!-- upper case -->
+    <h1 class="page--title">Номера и цены</h1> <!-- upper case -->
     <section class="container">
         <section class="room-card">
-            <img src="images/room_lux.png" alt="" class="room-card--img">
-            <section class="room-card--content">
-                 <section class="room-card--title">Представительский люкс</section>
-                    <section class="room-card--description">Эксклюзивный номер с  
+            <img src="images/room_lux.png" alt="" class="room-card__img">
+            <section class="room-card__content">
+                
+            <!--<section class="room-card__cover"></section>-->
+                <!-- <img src="images/Best_price_gurantee.svg" alt="" class="room-card--img"> -->
+                 <section class="room-card__description">
+                    <a href="index.html" class="room-card__description--link">Представительский люкс</a>
+                    <span class="room-card__description--text">Эксклюзивный номер с  
                         панорамным видом на центр  
                         города Москвы
-                    </section>
-                     <!-- border -->
+                    </span>
+
+                 </section>
+                 <section class="room-card__price--container">
                     <section class="room-card__price">
                         <!-- <section class="container__room-card--price"> -->
-                            <span class="room-card--price--text">Цена за сутки</span> <!-- span -->
+                            <span class="room-card__price--text">Цена за сутки</span> <!-- span -->
+                           
+                            <br>                                                                                  <!-- Спросить у Егора можно ли так делать-->
                         <!-- </section>-->
                         <!--<section class="container__room-card--price--value">-->
-                        <section class="room-card--price--num">
-                        <span class='room-card--price--from'>от</span> 
-                        <span class='room-card--price--num'>7 900</span> 
-                        <span class='room-card--ruble--ico'>₽</span>
-                        </section>
+                        <!--<section class="room-card--price--num">-->
+                        <span class='room-card__price--from'>от</span> 
+                        <span class='room-card__price--num'>7 900</span> 
+                        <span class='room-card__price--ruble-ico'>₽</span>
+                        <!--</section>-->
                         <!--</section> -->
                    </section>
                     
-                        <button class="room-card--btn">Забронировать</button>
-             
+                        <button class="room-card__btn" onclick="reservedRoom(this)">Забронировать</button>
+             </section>
                 </section>
             </section>
+            
         </section>
-        </div>
-        </div>
 </body>
 </html>
