@@ -1,53 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru_RU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestTask TravelLine</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body class="page">
-    
-    <img src="images/Background.png" alt="" class="decor--bg">
-    <h1 class="page--title">НОМЕРА И ЦЕНЫ</h1>
-    <div class="container">
-        <div class="container__room-card">
-            <img src="images/room_lux.png" alt="" class="container__room-card--img">
-            <div class="container__room-card--content">
-                 <div class="container__room-card--title">Представительский люкс</div>
-                    <div class="container__room-card--description">Эксклюзивный номер с  
+    <h1 class="page--title">НОМЕРА И ЦЕНЫ</h1> <!-- upper case -->
+    <section class="container">
+        <section class="room-card">
+            <img src="images/room_lux.png" alt="" class="room-card--img">
+            <section class="room-card--content">
+                 <section class="room-card--title">Представительский люкс</section>
+                    <section class="room-card--description">Эксклюзивный номер с  
                         панорамным видом на центр  
                         города Москвы
-                    </div>
-                    <hr>
-                        <div class="container__room-card--price">
-                            Цена за сутки
-                        </div>
-                        <div class="container__room-card--price--value">
-                        <div class="container__room-card--price--from">
-                            от 
-                        </div>
-                        <div class="container__room-card--price--num">
-                            7 900 
-                        </div>
-                        <div class="container__room-card--price--currency">
-                            ₽
-                        </div>
-                        </div>
-                   
+                    </section>
+                     <!-- border -->
+                    <section class="room-card__price">
+                        <!-- <section class="container__room-card--price"> -->
+                            <span class="room-card--price--text">Цена за сутки</span> <!-- span -->
+                        <!-- </section>-->
+                        <!--<section class="container__room-card--price--value">-->
+                        <section class="room-card--price--num">
+                        <span class='room-card--price--from'>от</span> 
+                        <span class='room-card--price--num'>7 900</span> 
+                        <span class='room-card--ruble--ico'>₽</span>
+                        </section>
+                        <!--</section> -->
+                   </section>
                     
-                        <button class="container__room-card--btn">Забронировать</button>
+                        <button class="room-card--btn">Забронировать</button>
              
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
         </div>
         </div>
 </body>
