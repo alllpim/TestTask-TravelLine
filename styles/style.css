@@ -80,6 +80,7 @@
     line-height: 21px;
     padding: 77px 21px 22px 21px;
     color: #FFFFFF;
+    /*min-height: 219px;*/
 }
 
 .room-card__description--text {
@@ -99,12 +100,12 @@
 }
 
 .room-card__price--text {
+    display: block;
+    width: 100%;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    vertical-align: middle;
     color: #FFFFFF;
-    margin-top: 21px;
 }
 
 .room-card--price--value {
@@ -168,11 +169,11 @@
     margin-top: 16px;
     margin-bottom: 21px;
 }
-.room-card--btn:hover {
+.room-card__btn:hover {
     background-color: #D8003F;
 }
 
-.room-card--btn:active {
+.room-card__btn:active {
     background-color: #D8003F;
     color: #F9637C;
 }
@@ -185,6 +186,7 @@
     color: #FFFFFF;
     text-align: center;
     min-height: 149px;
+    bottom: 0;
 }
 
 .room-card__booked--pay-link{
