@@ -1,0 +1,254 @@
+html, body {
+     height: 100%;
+     margin: 0;
+    padding: 0;
+}
+.page {
+    width: 100%;
+    min-height: 100%;
+    background: url('../images/Background.svg') no-repeat center top;
+    background-size: 100% auto;
+    background-position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap; /*вери сомнительное решение, на подумать*/
+}
+
+.container {
+    width: 1280px;
+}
+
+.page--title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.room-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 372px;
+    max-width: 372px;
+    min-height: 372px;
+    min-width: 372px;
+    border-radius: 13px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+.room-card__img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.room-card__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; 
+
+    background:linear-gradient(
+        to top,
+        rgba(10, 34, 64, 1),
+        rgba(10, 34, 64, 0.1));   
+}
+
+.room-card__content {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+}
+.room-card__best-price {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    visibility: hidden;
+}
+.mark-text {
+    background: #FF7647;
+    border-radius: 3px 0 0 3px;
+    padding: 4px 4px 5px 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.mark-ico {
+    width: 36px;
+    height: 30px;
+    background: url('../images/icon-discount.svg') no-repeat;
+    background-position: left center;
+}
+
+.room-card__description {
+     border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.room-card__description--link {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-bottom: 9px;
+}
+
+.room-card__description--link:hover{
+    text-decoration: underline;
+}
+
+.room-card__description--link:active{
+    text-decoration: none;
+    opacity: 50%;
+}
+
+.room-card__description--text{
+    display: block;
+    padding-bottom: 21px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.room-card__price--container {
+    padding-top: 18px;
+}
+.room-card__price--description {
+    position: relative;
+    float: left;
+}
+
+.room-card__price--text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+}
+.room-card__price--from {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.room-card__price--num {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #FF4B77;
+    font-weight: 700;
+}
+
+.room-card__price--ruble-ico {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #999999;
+}
+
+.room-card__btn {
+    border: none;
+    position: relative;
+    float: right;
+    background-color: #F91155;
+    padding: 13px 25px;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.room-card__btn:hover {
+    background-color: #D8003F;
+}
+
+.room-card__btn:active {
+    background-color: #D8003F;
+    color: #F9637C;
+}
+
+
+
+.room-card__booked {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: #3C3E43;
+    color: #FFFFFF;
+    text-align: center;
+    min-height: 149px;
+    bottom: 0;
+}
+
+.room-card__booked--pay-link{
+    color: #FF4B77;
+    text-decoration: none;
+}
+
+.room-card__booked--pay-link:hover{
+    color: #FF4B77;
+    text-decoration: underline;
+}
+
+.room-card__booked--pay-link:active{
+    color: #FF97B0;
+    text-decoration: none;
+}
+
+.room-card__booked-text {
+    position: absolute;
+    background-color: #3C3E43;
+    width: 100%;
+    height: 96px;
+    bottom: 0;
+    visibility: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: #3C3E43;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.room-card__booked--text {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.room-card__booked--cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; 
+    background-color:rgba(255, 255, 255, 0.4); 
+    visibility: hidden;
+}
