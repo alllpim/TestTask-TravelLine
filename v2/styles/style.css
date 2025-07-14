@@ -7,22 +7,25 @@ html, body {
     width: 100%;
     min-height: 100%;
     background: url('../images/Background.svg') no-repeat center top;
-    background-size: 100% auto;
-    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    flex-wrap: wrap; /*вери сомнительное решение, на подумать*/
+    flex-wrap: wrap;
 }
 
 .container {
     width: 1280px;
+    margin: 0 auto;
 }
 
 .page--title {
     font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 55px;
     text-transform: uppercase;
     margin-bottom: 33px;
     text-align: center;
@@ -41,19 +44,16 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 372px;
-    max-width: 372px;
-    min-height: 372px;
-    min-width: 372px;
+    height: 372px;
+    width: 372px;
     border-radius: 13px;
     overflow: hidden;
     position: relative;
-    
 }
 
 
 .room-card__img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
@@ -65,7 +65,6 @@ html, body {
     width: 100%;
     height: 100%;
     box-sizing: border-box; 
-
     background:linear-gradient(
         to top,
         rgba(10, 34, 64, 1),
@@ -100,6 +99,7 @@ html, body {
     height: 30px;
     background: url('../images/icon-discount.svg') no-repeat;
     background-position: left center;
+    margin-left: -2px;
 }
 
 .room-card__description {
@@ -132,7 +132,6 @@ html, body {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .room-card__price--container {
@@ -144,7 +143,6 @@ html, body {
 }
 
 .room-card__price--text {
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 700;
@@ -153,6 +151,7 @@ html, body {
 .room-card__price--from {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
+    line-height: 24px;
     color: #fff;
     font-weight: 700;
 }
@@ -160,6 +159,7 @@ html, body {
 .room-card__price--num {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    line-height: 32px;
     color: #FF4B77;
     font-weight: 700;
 }
@@ -167,6 +167,7 @@ html, body {
 .room-card__price--ruble-ico {
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
+    line-height: 32px;
     color: #999999;
 }
 
@@ -175,7 +176,7 @@ html, body {
     position: relative;
     float: right;
     background-color: #F91155;
-    padding: 13px 25px;
+    padding: 13px 24px;
     height: 48px;
     border-radius: 5px;
     font-size: 16px;
@@ -193,18 +194,6 @@ html, body {
     color: #F9637C;
 }
 
-
-
-.room-card__booked {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: #3C3E43;
-    color: #FFFFFF;
-    text-align: center;
-    min-height: 149px;
-    bottom: 0;
-}
 
 .room-card__booked--pay-link{
     color: #FF4B77;
@@ -231,15 +220,23 @@ html, body {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    background-color: #3C3E43;
     color: #FFFFFF;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .room-card__booked--text {
-    display: block;
-    width: 100%;
-    margin-top: 25px;
+   display: block;
+   width: 100%;
+}
+
+.payment-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
 .room-card__booked--cover {
@@ -251,4 +248,125 @@ html, body {
     box-sizing: border-box; 
     background-color:rgba(255, 255, 255, 0.4); 
     visibility: hidden;
+}
+
+@media (max-width: 768px) {
+.page {
+    align-items: start;
+}
+.container {
+    width: 768px;
+}
+.page--title {
+    margin-bottom: 26px;
+    margin-top: 27px;
+}
+
+.content {
+    gap: 28px;
+}
+
+.room-card {
+    height: 420px;
+    width: 336px;
+    border-radius: 10px;
+}
+
+.room-card__price--container {
+    padding-top: 17px;
+}
+.room-card__price--description {
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.room-card__btn {
+    padding: 13px 78px;
+    width: 100%;
+}
+
+
+.room-card__booked-text {
+    height: 161px;
+}
+
+
+}
+
+@media (max-width: 320px) {
+.page {
+    align-items: start;
+}
+.container {
+    width: 768px;
+}
+.page--title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.content {
+    gap: 32px;
+}
+
+.room-card {
+    height: 347px;
+    width: 288px;
+    border-radius: 13px;
+}
+
+.room-card__content {
+    bottom: 21px;
+    left: 21px;
+    right: 21px;
+}
+
+.room-card__description--link {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+.room-card__description--text{
+    padding-bottom: 22px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.room-card__price--text {
+    font-size: 14px;
+    font-weight: 700;
+}
+.room-card__price--from {
+    font-size: 17px;
+}
+
+.room-card__price--num {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.room-card__price--ruble-ico {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+;
+}
+
+.room-card__btn {
+    padding: 10px 67px;
+    height: 42px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+.room-card__booked-text {
+    height: 149px;
+    visibility: hidden;
+    font-size: 12px;
+}
+
 }
