@@ -1,199 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="ru_RU">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>TestTask TravelLine</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/room_card.js"></script>
-</head>
-<body class="page">
- <section class="container">
-    <h1 class="page--title">Номера и цены</h1> 
-    <div class="content">
+  </head>
+  <body class="page">
+    <section class="container">
+      <h1 class="page--title">Номера и цены</h1>
+      <div class="content">
         <div class="room-card">
-            <img src="images/room_lux.png" alt="" class="room-card__img">
-            <div class="room-card__gradient">
-                 <div class="room-card__best-price">
-                        <span class="mark-text">Гарантия лучшей цены!</span>
-                        <span class="mark-ico"></span>
-                    </div>
-                <div class="room-card__content">
-                   
-                 <div class="room-card__description">
-                    <a href="#" class="room-card__description--link">Представительский люкс</a>
-                    <span class="room-card__description--text">Эксклюзивный номер с панорамным видом на центр города Москвы
-                    </span>
-                </div>
-                <div class="room-card__price--container">
+          <img src="images/lux_room.png" alt="" class="room-card__img" />
+          <div class="room-card__gradient">
+            <div class="room-card__best-price">
+              <span class="mark-text">Гарантия лучшей цены!</span>
+              <span class="mark-ico"></span>
+            </div>
+            <div class="room-card__content">
+              <div class="room-card__description">
+                <a href="#" class="room-card__description--link"
+                  >Представительский люкс</a
+                >
+                <span class="room-card__description--text"
+                  >Эксклюзивный номер с панорамным видом на центр города Москвы
+                </span>
+              </div>
+              <div class="room-card__price--container">
                 <div class="room-card__price--description">
-                        <span class="room-card__price--text">Цена за сутки</span>
-                        <span class="room-card__price--from">от</span> 
-                        <span class="room-card__price--num">7 900</span>
-                        <span class="room-card__price--ruble-ico">₽</span>
+                  <span class="room-card__price--text">Цена за сутки</span>
+                  <span class="room-card__price--from">от</span>
+                  <span class="room-card__price--num">7 900</span>
+                  <span class="room-card__price--ruble-ico">₽</span>
                 </div>
-                    <button class="room-card__btn">Забронировать</button>
-                </div>
+                <button class="room-card__btn">Забронировать</button>
+              </div>
             </div>
             <div class="room-card__booked--cover">
-            <div class="room-card__booked-text">
-                <span class="room-card__booked--text">Номер зарезервирован</span>
-                    <div class="payment-line">
-        <span>Перейти к</span>
-        <a href="#" class="room-card__booked--pay-link">оплате</a>
-    </div>
-</div>
-            </div>
-             </div>
-        </div>
-         <div class="room-card">
-            <img src="images/duplex_room.png" alt="" class="room-card__img">
-            <div class="room-card__gradient">
-                 <div class="room-card__best-price">
-                        <span class="mark-text">Гарантия лучшей цены!</span>
-                        <span class="mark-ico"></span>
-                    </div>
-                <div class="room-card__content">
-                   
-                 <div class="room-card__description">
-                    <a href="#" class="room-card__description--link">Дуплекс</a>
-                    <span class="room-card__description--text">Просторный двухкомнатный номер с шикарным видом на парк
-                    </span>
+              <div class="room-card__booked-text">
+                <span class="room-card__booked--text"
+                  >Номер зарезервирован</span
+                >
+                <div class="payment-line">
+                  <span>Перейти к</span>
+                  <a href="#" class="room-card__booked--pay-link">оплате</a>
                 </div>
-                <div class="room-card__price--container">
-                <div class="room-card__price--description">
-                        <span class="room-card__price--text">Цена за сутки</span>
-                        <span class="room-card__price--from">от</span> 
-                        <span class="room-card__price--num">5 700</span>
-                        <span class="room-card__price--ruble-ico">₽</span>
-                </div>
-                    <button class="room-card__btn" >Забронировать</button>
-                </div>
+              </div>
             </div>
-            <div class="room-card__booked--cover">
-            <div class="room-card__booked-text">
-                <span class="room-card__booked--text">Номер зарезервирован</span>
-                    <div class="payment-line">
-        <span>Перейти к</span>
-        <a href="#" class="room-card__booked--pay-link">оплате</a>
-    </div>
-            </div>
-            </div>
-             </div>
+          </div>
         </div>
         <div class="room-card">
-            <img src="images/business_room.png" alt="" class="room-card__img">
-            <div class="room-card__gradient">
-                 <div class="room-card__best-price">
-                        <span class="mark-text">Гарантия лучшей цены!</span>
-                        <span class="mark-ico"></span>
-                    </div>
-                <div class="room-card__content">
-                   
-                 <div class="room-card__description">
-                    <a href="#" class="room-card__description--link">Бизнес-люкс</a>
-                    <span class="room-card__description--text">Трёхкомнатный номер с панорамным видом на Москва-реку
-                    </span>
-                </div>
-                <div class="room-card__price--container">
+          <img src="images/duplex_room.png" alt="" class="room-card__img" />
+          <div class="room-card__gradient">
+            <div class="room-card__best-price">
+              <span class="mark-text">Гарантия лучшей цены!</span>
+              <span class="mark-ico"></span>
+            </div>
+            <div class="room-card__content">
+              <div class="room-card__description">
+                <a href="#" class="room-card__description--link">Дуплекс</a>
+                <span class="room-card__description--text"
+                  >Просторный двухкомнатный номер с шикарным видом на парк
+                </span>
+              </div>
+              <div class="room-card__price--container">
                 <div class="room-card__price--description">
-                        <span class="room-card__price--text">Цена за сутки</span>
-                        <span class="room-card__price--from">от</span> 
-                        <span class="room-card__price--num">4 900</span>
-                        <span class="room-card__price--ruble-ico">₽</span>
+                  <span class="room-card__price--text">Цена за сутки</span>
+                  <span class="room-card__price--from">от</span>
+                  <span class="room-card__price--num">5 700</span>
+                  <span class="room-card__price--ruble-ico">₽</span>
                 </div>
-                    <button class="room-card__btn">Забронировать</button>
-                </div>
+                <button class="room-card__btn">Забронировать</button>
+              </div>
             </div>
             <div class="room-card__booked--cover">
-            <div class="room-card__booked-text">
-                <span class="room-card__booked--text">Номер зарезервирован</span>
-                    <div class="payment-line">
-        <span>Перейти к</span>
-        <a href="#" class="room-card__booked--pay-link">оплате</a>
-    </div>
+              <div class="room-card__booked-text">
+                <span class="room-card__booked--text"
+                  >Номер зарезервирован</span
+                >
+                <div class="payment-line">
+                  <span>Перейти к</span>
+                  <a href="#" class="room-card__booked--pay-link">оплате</a>
+                </div>
+              </div>
             </div>
-            </div>
-             </div>
+          </div>
         </div>
         <div class="room-card">
-            <img src="images/business_room.png" alt="" class="room-card__img">
-            <div class="room-card__gradient">
-                 <div class="room-card__best-price">
-                        <span class="mark-text">Гарантия лучшей цены!</span>
-                        <span class="mark-ico"></span>
-                    </div>
-                <div class="room-card__content">
-                   
-                 <div class="room-card__description">
-                    <a href="#" class="room-card__description--link">Бизнес-люкс</a>
-                    <span class="room-card__description--text">Трёхкомнатный номер с панорамным видом на Москва-реку
-                    </span>
-                </div>
-                <div class="room-card__price--container">
+          <img src="images/business_room.png" alt="" class="room-card__img" />
+          <div class="room-card__gradient">
+            <div class="room-card__best-price">
+              <span class="mark-text">Гарантия лучшей цены!</span>
+              <span class="mark-ico"></span>
+            </div>
+            <div class="room-card__content">
+              <div class="room-card__description">
+                <a href="#" class="room-card__description--link">Бизнес-люкс</a>
+                <span class="room-card__description--text"
+                  >Трёхкомнатный номер с панорамным видом на Москва-реку
+                </span>
+              </div>
+              <div class="room-card__price--container">
                 <div class="room-card__price--description">
-                        <span class="room-card__price--text">Цена за сутки</span>
-                        <span class="room-card__price--from">от</span> 
-                        <span class="room-card__price--num">4 900</span>
-                        <span class="room-card__price--ruble-ico">₽</span>
+                  <span class="room-card__price--text">Цена за сутки</span>
+                  <span class="room-card__price--from">от</span>
+                  <span class="room-card__price--num">4 900</span>
+                  <span class="room-card__price--ruble-ico">₽</span>
                 </div>
-                    <button class="room-card__btn">Забронировать</button>
-                </div>
+                <button class="room-card__btn">Забронировать</button>
+              </div>
             </div>
             <div class="room-card__booked--cover">
-            <div class="room-card__booked-text">
-                <span class="room-card__booked--text">Номер зарезервирован</span>
-                    <div class="payment-line">
-        <span>Перейти к</span>
-        <a href="#" class="room-card__booked--pay-link">оплате</a>
-    </div>
+              <div class="room-card__booked-text">
+                <span class="room-card__booked--text"
+                  >Номер зарезервирован</span
+                >
+                <div class="payment-line">
+                  <span>Перейти к</span>
+                  <a href="#" class="room-card__booked--pay-link">оплате</a>
+                </div>
+              </div>
             </div>
-            </div>
-             </div>
+          </div>
         </div>
-         <div class="room-card">
-            <img src="images/business_room.png" alt="" class="room-card__img">
-            <div class="room-card__gradient">
-                 <div class="room-card__best-price">
-                        <span class="mark-text">Гарантия лучшей цены!</span>
-                        <span class="mark-ico"></span>
-                    </div>
-                <div class="room-card__content">
-                   
-                 <div class="room-card__description">
-                    <a href="#" class="room-card__description--link">Бизнес-люкс</a>
-                    <span class="room-card__description--text">Трёхкомнатный номер с панорамным видом на Москва-реку
-                    </span>
-                </div>
-                <div class="room-card__price--container">
-                <div class="room-card__price--description">
-                        <span class="room-card__price--text">Цена за сутки</span>
-                        <span class="room-card__price--from">от</span> 
-                        <span class="room-card__price--num">4 900</span>
-                        <span class="room-card__price--ruble-ico">₽</span>
-                </div>
-                    <button class="room-card__btn">Забронировать</button>
-                </div>
-            </div>
-            <div class="room-card__booked--cover">
-            <div class="room-card__booked-text">
-                <span class="room-card__booked--text">Номер зарезервирован</span>
-                    <div class="payment-line">
-        <span>Перейти к</span>
-        <a href="#" class="room-card__booked--pay-link">оплате</a>
-    </div>
-            </div>
-            </div>
-             </div>
-        </div>
-    </div>    
- </section>
-</body>
+      </div>
+    </section>
+  </body>
 </html>
